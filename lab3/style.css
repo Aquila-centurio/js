@@ -1,0 +1,44 @@
+h1{
+  font-size: 30px;
+  color: #f80404;
+}
+
+.lorem {
+  background-color: rgb(13, 87, 223);
+  width: 150px;
+  height: 50px;
+  color: #ffffff;
+}
+
+.red {
+  color: #f50404;
+}
+
+.h21 {
+  background-color: rgb(2, 75, 26);
+
+  height: 30px;
+  color: #ffffff;
+}
+
+.h22 {
+  height: 150px;
+  color: #ffffff;
+  text-align: center; /* Выравнивание по центру по горизонтали */
+  background-color: rgb(2, 75, 26);
+  display: flex;
+  align-items: center; /* Выравнивание по центру по вертикали */
+  padding: 0 30px; /* Отступ 30px слева и справа */
+}
+
+.text {
+  margin-left: 50px;
+}
+
+.text1 {
+  margin-left: 10px;
+}
+
+li {
+  border: 1px solid black;
+}
