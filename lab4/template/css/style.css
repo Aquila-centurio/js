@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* Сбрасываем отступы и поля для всех элементов, а также 
+     устанавливаем модель расчета размеров box-sizing: border-box. 
+     Это важно для того, чтобы padding и border не увеличивали 
+     общий размер элемента. */
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  /* Устанавливаем базовые стили для всего документа: 
+     шрифт Arial, светлый серый фон и основной цвет текста - темно-серый. */
+  
+  .main-container {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    
+  }
+  /* Основной контейнер с максимальной шириной 1200px. 
+     Элемент центрируется на странице за счет margin: 0 auto. 
+     Добавляем внутренние отступы padding для отступов от краев. */
+  
+  .intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, #3a7edd, #d9e9ff);
+    padding: 50px;
+    width: 100%; 
+    
+  }
+  /* Секция с текстом и изображением. 
+     Flexbox используется для позиционирования элементов по горизонтали. 
+     justify-content: space-between разносит элементы по краям, 
+     align-items: center выравнивает по вертикали. 
+     Добавляем внутренние отступы и задаем светлый голубой фон. */
+  
+  .text-block {
+    flex: 1;
+    margin-right: 46px;
+    color: #fff;
+  }
+  /* Блок с текстом занимает оставшееся пространство (flex: 1) 
+     и отступает справа на 20px от изображения. */
+  
+  .text-block h1 {
+    font-size: 52 px;
+    color: #f5f7f8;
+  }
+
+  .text-block h2 {
+    font-size: 46 px;
+    color: #f5f7f8;
+  }
+  /* Стили для заголовка: большой размер шрифта и синий цвет. */
+  
+  .text-block p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #f8f4f4;
+  }
+  /* Стили для абзаца: добавляем отступы сверху и снизу, 
+     устанавливаем размер шрифта и цвет текста - темно-серый. */
+  
+  .text-block button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+  }
+  /* Кнопка: добавляем внутренние отступы, яркий желтый фон, 
+     убираем границы и устанавливаем указатель при наведении. */
+  
+  .image-block img {
+    max-width: 100%;
+    flex: 2;
+  }
+  /* Изображение в блоке занимает всю доступную ширину контейнера, 
+     сохраняя пропорции. */
+  
+  .services-section {
+    background-color: #fff;
+    padding: 50px;
+    text-align: center;
+  }
+  /* Секция с услугами: белый фон, внутренние отступы и выравнивание 
+     текста по центру. */
+  
+  .services-section h2 {
+    font-size: 46px;
+    margin-bottom: 40px;
+  }
+  /* Заголовок секции: увеличенный размер шрифта и нижний отступ. */
+  
+  .services {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Контейнер для блоков с услугами: используем Flexbox для 
+     выравнивания блоков по горизонтали с равным пространством между ними. */
+  
+  .service-block {
+    flex: 1;
+    margin: 0 15px;
+    text-align: center;
+  }
+  /* Каждый блок услуги занимает равное пространство (flex: 1) 
+     с горизонтальными отступами. Все элементы внутри блока выравнены по центру. */
+  
+  .service-block img {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  /* Изображение в блоке услуги ограничено максимальной шириной 100px, 
+     добавляем нижний отступ. */
+  
+  .service-block h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  /* Заголовок услуги: увеличенный размер шрифта и нижний отступ. */
+  
+  .service-block p {
+    color: #666;
+  }
+  /* Описание услуги: темно-серый цвет текста. */
+  
+  .contact-form-section {
+    background-color: #f9f9f9;
+    padding: 50px;
+    text-align: center;
+  }
+  /* Секция с формой: светло-серый фон, внутренние отступы и выравнивание по центру. */
+  
+  .contact-form-section h2 {
+    font-size: 46px;
+    margin-bottom: 20px;
+  }
+  /* Заголовок формы: увеличенный размер шрифта и нижний отступ. */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Форму выравниваем по центру, элементы располагаем вертикально (column). */
+  
+  form input,
+  form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  /* Поля формы (input, textarea): занимают 100% ширины, но не больше 500px. 
+     Добавляем внутренние отступы, нижний отступ и светлую границу. */
+  
+  form button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  /* Кнопка отправки: добавляем внутренние отступы, желтый фон, 
+     убираем границу и задаем указатель при наведении. */
+  
+     footer {
+        text-align: center;
+        padding: 50px;
+        background: linear-gradient(to bottom, #4580d3 50%, #0066cc 50%); /* Градиент с двумя цветами */
+        color: #fff;
+        font-size: 14px;
+      }
+      
+  /* Подвал страницы: синий фон, белый текст, выравнивание по центру 
+     и внутренние отступы. */
+  
