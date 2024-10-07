@@ -1,188 +1,197 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /* Сбрасываем отступы и поля для всех элементов, а также 
-     устанавливаем модель расчета размеров box-sizing: border-box. 
-     Это важно для того, чтобы padding и border не увеличивали 
-     общий размер элемента. */
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  /* Устанавливаем базовые стили для всего документа: 
-     шрифт Arial, светлый серый фон и основной цвет текста - темно-серый. */
-  
-  .main-container {
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    
-  }
-  /* Основной контейнер с максимальной шириной 1200px. 
-     Элемент центрируется на странице за счет margin: 0 auto. 
-     Добавляем внутренние отступы padding для отступов от краев. */
-  
-  .intro-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(0deg, #3a7edd, #d9e9ff);
-    padding: 50px;
-    width: 100%; 
-    
-  }
-  /* Секция с текстом и изображением. 
-     Flexbox используется для позиционирования элементов по горизонтали. 
-     justify-content: space-between разносит элементы по краям, 
-     align-items: center выравнивает по вертикали. 
-     Добавляем внутренние отступы и задаем светлый голубой фон. */
-  
-  .text-block {
-    flex: 1;
-    margin-right: 46px;
-    color: #fff;
-  }
-  /* Блок с текстом занимает оставшееся пространство (flex: 1) 
-     и отступает справа на 20px от изображения. */
-  
-  .text-block h1 {
-    font-size: 52 px;
-    color: #f5f7f8;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .text-block h2 {
-    font-size: 46 px;
-    color: #f5f7f8;
-  }
-  /* Стили для заголовка: большой размер шрифта и синий цвет. */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.main-container {
+  width: 100%;
+  margin: 0 auto;
+
+  justify-content: center;
+}
+
+.background1 {
+  background: linear-gradient(0deg, #3a7edd, #d9e9ff);
+  padding: 50px 0; 
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  width: 100%;
+  max-width: 1500px; 
+  margin: 0 auto; 
+}
+
+.text-and-logo {
+  flex: 1;
+  margin-right: 46px;
+  color: #fff;
+}
+
+.text-and-logo img {
+  margin-bottom: 20px; 
+}
+
+.text-and-logo h1 {
+  font-size: 52px;
+  color: #f5f7f8;
+  margin-bottom: 20px; 
+}
+
+.text-and-logo h2 {
+  font-size: 46px;
+  color: #f5f7f8;
+  margin-bottom: 10px; 
+}
+
+.text-and-logo p {
+  margin: 20px 0;
+  font-size: 18px;
+  color: #f8f4f4;
+}
+
+.text-and-logo button {
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  margin-top: 20px; 
+}
+
+.phone img {
+  max-width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+/*---------------- Второй блок-------------*/
+
+.background2 {
+  background-color: #f4f4f4; 
+  padding: 50px 0; 
+}
+
+.second_part {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0 20px; 
+  width: 100%;
+  max-width: 1500px; 
+  margin: 0 auto;
+}
+
+.second_part h2 {
+  font-size: 46px;
+  margin-bottom: 40px; 
+  text-align: center; 
+}
+
+.blocks {
+  display: flex;
+  justify-content: space-between; 
+  gap: 50px; 
+  width: 100%; 
+}
+
+.universal_block {
+  flex: 1; 
+  margin: 0 15px; 
+  text-align: center; 
+}
+
+.universal_block img {
+  max-width: 100px; 
+  margin-bottom: 20px; 
+}
+.universal_block h3 {
+  font-size: 24px; 
+  margin-bottom: 10px; 
+}
+
+.universal_block p {
+  color: #666; 
+}
+
+/*---------------- Третий блок-------------*/
+
+.zakaz {
+  background-color: #ebf9fc;
+  padding: 50px;
+  text-align: center;
+}
+
+.zakaz h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #ffcc00;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*---------------- Четвёртый блок-------------*/
+footer {
+  text-align: center; /* Центрируем текст */
+  font-size: 14px; /* Размер шрифта */
+  position: relative; /* Для управления позиционированием дочерних элементов */
+}
+
+.background3 {
+  background: linear-gradient(180deg, #19498d, #5b98ec);
+  height: 100px; /* Высота для первого градиента */
+  width: 100%; /* Занимает всю ширину */
+  margin: 0; /* Убираем отступы */
+}
+
+.background4 {
+  background: linear-gradient(180deg, #4b8be6, #95baee);
+  height: 100px; /* Высота для второго градиента */
+  width: 100%; /* Занимает всю ширину */
+  margin: 0; /* Убираем отступы */
   
-  .text-block p {
-    margin: 20px 0;
-    font-size: 18px;
-    color: #f8f4f4;
-  }
-  /* Стили для абзаца: добавляем отступы сверху и снизу, 
-     устанавливаем размер шрифта и цвет текста - темно-серый. */
-  
-  .text-block button {
-    padding: 10px 20px;
-    background-color: #ffcc00;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    color: #333;
-  }
-  /* Кнопка: добавляем внутренние отступы, яркий желтый фон, 
-     убираем границы и устанавливаем указатель при наведении. */
-  
-  .image-block img {
-    max-width: 100%;
-    flex: 2;
-  }
-  /* Изображение в блоке занимает всю доступную ширину контейнера, 
-     сохраняя пропорции. */
-  
-  .services-section {
-    background-color: #fff;
-    padding: 50px;
-    text-align: center;
-  }
-  /* Секция с услугами: белый фон, внутренние отступы и выравнивание 
-     текста по центру. */
-  
-  .services-section h2 {
-    font-size: 46px;
-    margin-bottom: 40px;
-  }
-  /* Заголовок секции: увеличенный размер шрифта и нижний отступ. */
-  
-  .services {
-    display: flex;
-    justify-content: space-between;
-  }
-  /* Контейнер для блоков с услугами: используем Flexbox для 
-     выравнивания блоков по горизонтали с равным пространством между ними. */
-  
-  .service-block {
-    flex: 1;
-    margin: 0 15px;
-    text-align: center;
-  }
-  /* Каждый блок услуги занимает равное пространство (flex: 1) 
-     с горизонтальными отступами. Все элементы внутри блока выравнены по центру. */
-  
-  .service-block img {
-    max-width: 100px;
-    margin-bottom: 20px;
-  }
-  /* Изображение в блоке услуги ограничено максимальной шириной 100px, 
-     добавляем нижний отступ. */
-  
-  .service-block h3 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  /* Заголовок услуги: увеличенный размер шрифта и нижний отступ. */
-  
-  .service-block p {
-    color: #666;
-  }
-  /* Описание услуги: темно-серый цвет текста. */
-  
-  .contact-form-section {
-    background-color: #f9f9f9;
-    padding: 50px;
-    text-align: center;
-  }
-  /* Секция с формой: светло-серый фон, внутренние отступы и выравнивание по центру. */
-  
-  .contact-form-section h2 {
-    font-size: 46px;
-    margin-bottom: 20px;
-  }
-  /* Заголовок формы: увеличенный размер шрифта и нижний отступ. */
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  /* Форму выравниваем по центру, элементы располагаем вертикально (column). */
-  
-  form input,
-  form textarea {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  /* Поля формы (input, textarea): занимают 100% ширины, но не больше 500px. 
-     Добавляем внутренние отступы, нижний отступ и светлую границу. */
-  
-  form button {
-    padding: 10px 20px;
-    background-color: #ffcc00;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  /* Кнопка отправки: добавляем внутренние отступы, желтый фон, 
-     убираем границу и задаем указатель при наведении. */
-  
-     footer {
-        text-align: center;
-        padding: 50px;
-        background: linear-gradient(to bottom, #4580d3 50%, #0066cc 50%); /* Градиент с двумя цветами */
-        color: #fff;
-        font-size: 14px;
-      }
-      
-  /* Подвал страницы: синий фон, белый текст, выравнивание по центру 
-     и внутренние отступы. */
-  
+}
+
+footer p {
+  margin: 0; /* Убираем все отступы */
+  color: #fff; /* Цвет текста */
+  font-size: 20px;
+  position: absolute; /* Абсолютное позиционирование текста */
+  top: 50%; /* Центрируем текст вертикально */
+  left: 50%; /* Центрируем по горизонтали */
+  transform: translate(-50%, -50%); 
+}
