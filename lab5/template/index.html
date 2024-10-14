@@ -10,7 +10,14 @@
       rel="stylesheet"
     />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- Подключаем Animate.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
+
   <body>
     <div class="main-container">
       <!-- Первый блок. Текст, лого, телефон-->
@@ -18,18 +25,32 @@
         <div class="container top">
           <div class="text-and-logo">
             <img src="./img/logo.png" alt="logo" />
-            <h2>С помощью нас <br />вы сможете создать то, о чем</h2>
-            <h1>желаете!</h1>
+
+            <h2 class="animate__animated animate__jello">
+              С помощью нас <br />вы сможете создать то, о чем
+            </h2>
+
+            <h1 class="animate-header">желаете!</h1>
+
             <p>
               Наша команда поможет Вам достичь <br />
               огромного успеха. Мы верим в вас! И знаем это на <br />
               все 100%. Вас не остановить!
             </p>
-            <button>Узнать больше...</button>
+
+            <button
+              class="animate__animated animate__heartBeat animate__slower"
+            >
+              Узнать больше...
+            </button>
           </div>
 
           <div class="phone">
-            <img src="./img/header-img.png" alt="Phone Image" />
+            <img
+              class="animate-phone"
+              src="./img/header-img.png"
+              alt="Phone Image"
+            />
           </div>
         </div>
       </div>
@@ -37,24 +58,36 @@
       <!-- Услуги -->
       <div class="background2">
         <div class="container second_part">
-          <h2>Что Вам необходимо?</h2>
+          <h2 class="transition-header">Что Вам необходимо?</h2>
           <div class="blocks">
             <div class="universal_block">
-              <img src="./img/f3.png" alt="Первый блок" />
+              <img
+                class="transition-image"
+                src="./img/f3.png"
+                alt="Первый блок"
+              />
               <h3>Первый блок</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur<br />adipiscing elit.
               </p>
             </div>
             <div class="universal_block">
-              <img src="./img/f4.png" alt="Второй блок" />
+              <img
+                class="transition-image"
+                src="./img/f4.png"
+                alt="Второй блок"
+              />
               <h3>Второй блок</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur<br />adipiscing elit.
               </p>
             </div>
             <div class="universal_block">
-              <img src="./img/f5.png" alt="Третий блок" />
+              <img
+                class="transition-image"
+                src="./img/f5.png"
+                alt="Третий блок"
+              />
               <h3>Третий блок</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur<br />adipiscing elit.

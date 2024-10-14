@@ -189,3 +189,59 @@ footer p {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/*------------------------------------ Анимация keyFrames--------------------------------------------------*/
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-phone {
+  animation: pulse 2s;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-header {
+  animation: slideUp 3s; /* Плавная анимация с циклом */
+}
+
+/*--------------------------------Анимация transition--------------------------*/
+
+.transition-image {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.transition-image:hover {
+  transform: scale(1.1);
+  filter: brightness(0.9);
+}
+
+.transition-header {
+  transition: transform 0.3s ease;
+}
+
+.transition-header:hover {
+  transform: translateY(-5px);
+}
